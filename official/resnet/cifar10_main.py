@@ -249,10 +249,10 @@ def cifar10_model_fn(features, labels, mode, params):
 def define_cifar_flags():
   resnet_run_loop.define_resnet_flags()
   flags.adopt_module_key_flags(resnet_run_loop)
-  flags_core.set_defaults(data_dir='/tmp/cifar10_data/cifar-10-batches-bin',
-                          model_dir='/tmp/cifar10_model',
-                          resnet_size='56',
-                          train_epochs=182,
+  flags_core.set_defaults(data_dir='/cifar10_data/cifar-10-batches-bin',
+                          model_dir='/cifar10_model',
+                          resnet_size='50',
+                          train_epochs=50,
                           epochs_between_evals=10,
                           batch_size=128,
                           image_bytes_as_serving_input=False)
