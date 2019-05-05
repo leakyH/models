@@ -413,7 +413,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--num-layers',
       type=int,
-      default=44,
+      default=50,
       help='The number of layers of the model.')
   parser.add_argument(
       '--train-steps',
